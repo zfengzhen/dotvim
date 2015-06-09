@@ -71,8 +71,8 @@ autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 tex
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-nmap <F7> :TagbarToggle<cr>
-nmap <F8> :NERDTreeToggle<cr>
+nmap <Space>v :TagbarToggle<cr>
+nmap <Space>n :NERDTreeToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap  <D-/> :
 nnoremap <leader>a :Ack

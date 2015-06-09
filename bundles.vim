@@ -59,7 +59,19 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'edsono/vim-matchit'
 " 快速跳转 默认按键\\fa \\w \\e \\b
 Bundle 'Lokaltog/vim-easymotion'
-  let g:EasyMotion_leader_key = '<Leader>'
+  let g:EasyMotion_leader_key = '<Space>'
+  nmap s <Plug>(easymotion-s2)
+  nmap t <Plug>(easymotion-t2)
+  map  / <Plug>(easymotion-sn)
+  omap / <Plug>(easymotion-tn)
+  map  n <Plug>(easymotion-next)
+  map  N <Plug>(easymotion-prev)
+  map <Space>l <Plug>(easymotion-lineforward)
+  map <Space>j <Plug>(easymotion-j)
+  map <Space>k <Plug>(easymotion-k)
+  map <Space>h <Plug>(easymotion-linebackward)
+  let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion"
+  nmap <silent> # <ESC>/\<<c-r><c-w>\><CR><CR>
 
 
 "--------------
